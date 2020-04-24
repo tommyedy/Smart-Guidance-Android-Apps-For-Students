@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:background="@drawable/background_home"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:text="Welcome, "/>
+        <TextView
+            android:id="@+id/nama_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@+id/welcome"
+            android:layout_marginTop="55dp"
+            android:text="Nama User"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/status_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="85dp"
+            android:textSize="20dp"
+            android:text="as Students "/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/car4"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="11dp"
+                android:background="#fff"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Search Lectuer"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/garis"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="35dp"
+                        android:background="#f0efef"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/garis"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/search_class"
+                            android:queryHint="Find Lecturer"/>
+<!--                        <Button-->
+<!--                            android:id="@+id/create_class"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_margin="20dp"-->
+<!--                            android:background="@color/colowBoldOrange"-->
+<!--                            android:text="Find Class"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textSize="16sp"/>-->
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="fill_parent"-->
+    <!--            android:layout_height="fill_parent"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="8.0dip">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:baselineAligned="false"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:weightSum="1">-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ListSchedule">
+
+        <!--                <androidx.cardview.widget.CardView-->
+        <!--                    android:id="@+id/home_mRide"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:layout_margin="10dp"-->
+        <!--                    android:layout_marginLeft="5dp"-->
+        <!--                    android:layout_weight="0.33"-->
+        <!--                    android:clickable="true"-->
+        <!--                    app:cardCornerRadius="10dp"-->
+        <!--                    app:cardElevation="5dp">-->
+
+        <!--                    <RelativeLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:background="?attr/selectableItemBackground">-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView3"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_alignParentBottom="true"-->
+        <!--                            android:layout_centerHorizontal="true"-->
+        <!--                            android:layout_marginBottom="5dp"-->
+        <!--                            android:maxLines="1"-->
+        <!--                            android:text="Click Here For Details"-->
+        <!--                            android:textColor="#000"-->
+        <!--                            android:textStyle="bold" />-->
+
+        <!--                    </RelativeLayout>-->
+
+        <!--                </androidx.cardview.widget.CardView>-->
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--            </LinearLayout>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </ScrollView>-->
+</LinearLayout>

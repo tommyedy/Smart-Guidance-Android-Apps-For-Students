@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartschedule_students">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Students.Home.detailClassSearchStudents" />
+        <activity android:name=".Students.Note.details_note" />
+        <activity android:name=".Students.Home.result_seach_students" />
+        <activity android:name=".Students.Home.search_students" />
+        <activity android:name=".Students.Account_settings.account_settings" />
+        <activity android:name=".Students.Home.mainMenu" />
+        <activity android:name=".signUpStudents" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,1 +1,1 @@
-# smart_schedule_students
+# smart_guidance_students
